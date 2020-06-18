@@ -24,7 +24,6 @@ int main(){
 		double h1 = f(vec[i].second - vec[i-1].second);
 		double tri = 0.5*deltaX*h1;
 		double rec = deltaX*min(vec[i].second,vec[i-1].second);
-		double area = tri+rec;
 		ans+=tri+rec;
 	}
 	printf("%f\n",ans);
